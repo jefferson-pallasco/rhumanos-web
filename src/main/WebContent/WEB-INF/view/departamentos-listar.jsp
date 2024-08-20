@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-     <%@taglib uri ="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@taglib uri ="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +11,7 @@
 </head>
 <body>
 <h1>Departamentos</h1>
-	<button onclick="window.location.href ='/recursosh-web/departamentos/findOne?&opcion=1';return false;">
+	<button onclick="window.location.href ='/rhumanos-web/departamentos/findOne?&opcion=1';return false;">
  					Agregar
  					</button>
  	<table>
@@ -28,11 +29,11 @@
  					<td>${item.departamento}</td>
  					<td>${item.descripcion}</td>
  					<td>
- 					<button onclick="window.location.href ='/recursosh-web/departamentos/findOne?idDepartamento=${item.idDepartamento}&opcion=1';return false;">
+ 					<button onclick="window.location.href ='/rhumanos-web/departamentos/findOne?idDepartamento=${item.idDepartamento}&opcion=1';return false;">
  					Actualizar
  					</button>
  					
- 					<button onclick="window.location.href ='/recurosh-web/departamentos/findOne?idDepartamento=${item.idDepartamento}&opcion=2';return false;">
+ 					<button onclick="window.location.href ='/rhumanos-web/departamentos/findOne?idDepartamento=${item.idDepartamento}&opcion=2';return false;">
  					Eliminar
  					
  					</button>
