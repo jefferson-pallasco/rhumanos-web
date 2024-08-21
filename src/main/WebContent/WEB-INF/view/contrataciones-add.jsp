@@ -16,10 +16,10 @@
  	<input type="hidden"  id="idContratacion" name= "idContratacion" value="${contratacion.idContrataciones}"/> 
  	
  	idCiudad
- 	<input type="hidden"  id="idCiudad" name= "idCiudad" value="${contratacion.idCiudad}"/> 
+ 	<input type="text"  id="idCiudad" name= "idCiudad" value="${contratacion.idCiudad}"/> 
  	<br/>
  		idDepartamento
- 	<input type="hidden"  id="idDepartamento" name= "idDepartamento" value="${contratacion.idDepartamento}"/> 
+ 	<input type="text"  id="idDepartamento" name= "idDepartamento" value="${contratacion.idDepartamento}"/> 
  	<br/>
  		vacanteFecha
  	<input type="date"  id="vacanteFecha" name= "vacanteFecha" value="${contratacion.vacanteFecha}"/>
