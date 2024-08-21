@@ -14,7 +14,7 @@
  
  	<form action="add" method="post">
  	
- 	<input type="hidden"  id="iddepartamento" name= "iddepartamento" value="${departamento.iddepartamentos}"/> 
+ 	<input type="hidden"  id="idDepartamento" name= "idDepartamento" value="${departamento.idDepartamento}"/> 
  		
  		Departamento
  	<input type="text,"  id="departamento" name= "departamento" value="${departamento.departamento}"/> 

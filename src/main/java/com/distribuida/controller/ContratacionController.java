@@ -61,8 +61,8 @@ List<Contratacion> contrataciones = contratacionDAO.findAll();
 		
 	@PostMapping ("/add")
 	public String add(@RequestParam("idContratacion")@Nullable Integer idContratacion 
-			,@RequestParam("idCiudad")@Nullable Integer ciudad
-			,@RequestParam("idDepartamento")@Nullable Integer departamento
+			,@RequestParam("idCiudad")@Nullable Integer idCiudad
+			,@RequestParam("idDepartamento")@Nullable Integer idDepartamento
 			,@RequestParam("vacanteFecha")@Nullable  @DateTimeFormat(pattern="yyyy-MM-dd") Date vacanteFecha
 			,@RequestParam("vacantePuesto")@Nullable String vacantePuesto
 			,@RequestParam("vacanteDescripcion")@Nullable String vacanteDescripcion
@@ -76,12 +76,12 @@ List<Contratacion> contrataciones = contratacionDAO.findAll();
 			){
 //try {
 		if(idContratacion == null){
-			Contratacion contratacion = new Contratacion(0,1,1,vacanteFecha,vacantePuesto,vacanteDescripcion,vacanteModalidad
+			Contratacion contratacion = new Contratacion(0,idCiudad,idDepartamento,vacanteFecha,vacantePuesto,vacanteDescripcion,vacanteModalidad
 					,vacanteTiempo,vacanteNivel,vacanteNumero,vacanteSueldoEstimado);
 			contratacionDAO.add(contratacion); 
 			
 		}else {
-			Contratacion contratacion = new Contratacion(0,1,1,vacanteFecha,vacantePuesto,vacanteDescripcion,vacanteModalidad
+			Contratacion contratacion = new Contratacion(idContratacion,idCiudad,idDepartamento,vacanteFecha,vacantePuesto,vacanteDescripcion,vacanteModalidad
 					,vacanteTiempo,vacanteNivel,vacanteNumero,vacanteSueldoEstimado);
 			contratacionDAO.up(contratacion);
 			

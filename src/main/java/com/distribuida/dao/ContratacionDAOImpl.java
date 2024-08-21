@@ -83,7 +83,7 @@ query.executeUpdate();
 		// TODO coto-generated method stub
 Session session = sessionFactory.getCurrentSession();
 
-Query query = session.createQuery("DELETE FROM Contratacion co WHERE co idContratacion =: keyIdContratacion");
+Query query = session.createQuery("DELETE FROM Contratacion co WHERE co.idContratacion =: keyIdContratacion");
 query.setParameter("keyIdContratacion", id);
 query.executeUpdate();
 

@@ -13,7 +13,7 @@
 
  	<form action="add" method="post">
  	
- 	<input type="hidden"  id="idContratacion" name= "idContratacion" value="${contratacion.idContrataciones}"/> 
+ 	<input type="hidden"  id="idContratacion" name= "idContratacion" value="${contratacion.idContratacion}"/> 
  	
  	idCiudad
  	<input type="number"  id="idCiudad" name= "idCiudad" value="${contratacion.idCiudad}"/> 
