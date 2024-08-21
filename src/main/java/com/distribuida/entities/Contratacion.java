@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -24,6 +25,7 @@ public class Contratacion {
 	@Column(name="id_departamento")
 	private int idDepartamento;
 	@Column(name="vacante_fecha")
+	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date vacanteFecha;
 	@Column(name="vacante_puesto")
 	private String vacantePuesto;

@@ -32,7 +32,7 @@
  		 </tr>
  		 </thead>
  		<tbody>
- 			<c:forEach var="item" items="${contrataciones}">
+ 			<c:forEach var="item" items="${keyContrataciones}">
  				<tr>
  					<td>${item.idContratacion}</td>
  					<td>${item.idCiudad}</td>

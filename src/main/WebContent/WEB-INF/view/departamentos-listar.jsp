@@ -23,7 +23,7 @@
  		 </tr>
  		 </thead>
  		<tbody>
- 			<c:forEach var="item" items="${departamentos}">
+ 			<c:forEach var="item" items="${keyDepartamento}">
  				<tr>
  					<td>${item.idDepartamento}</td>
  					<td>${item.departamento}</td>

@@ -17,7 +17,7 @@
  	<input type="hidden"  id="iddepartamento" name= "iddepartamento" value="${departamento.iddepartamentos}"/> 
  		
  		Departamento
- 	<input type="text"  id="departamento" name= "departamento" value="${departamento.departamento}"/> 
+ 	<input type="text,"  id="departamento" name= "departamento" value="${departamento.departamento}"/> 
  	<br/>
  		Descripcion
  	<input type="text"  id="descripcion" name= "descripcion" value="${departamento.descripcion}"/> 

@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -62,7 +63,7 @@ List<Contratacion> contrataciones = contratacionDAO.findAll();
 	public String add(@RequestParam("idContratacion")@Nullable Integer idContratacion 
 			,@RequestParam("idCiudad")@Nullable Integer ciudad
 			,@RequestParam("idDepartamento")@Nullable Integer departamento
-			,@RequestParam("vacanteFecha")@Nullable Date vacanteFecha
+			,@RequestParam("vacanteFecha")@Nullable  @DateTimeFormat(pattern="yyyy-MM-dd") Date vacanteFecha
 			,@RequestParam("vacantePuesto")@Nullable String vacantePuesto
 			,@RequestParam("vacanteDescripcion")@Nullable String vacanteDescripcion
 			,@RequestParam("vacanteModalidad")@Nullable String vacanteModalidad
