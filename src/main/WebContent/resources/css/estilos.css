@@ -1,8 +1,17 @@
-body {
-	background: #7D8AA0;
-	color:#f31d00;
-	padding-left:50px;
-	padding-top: 100px;
-	font-family: cursive;
+
 	
+h1{
+	text-align: center; 
+	color: #F30505;
+	 margin-top: 20px; 
+	 background-color: #CB6969;
+}
+
+.container {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #5A6688; /* Color de fondo, puedes cambiarlo según tus preferencias */
+    padding: 0px; /* Espaciado interno para que el contenido no quede pegado a los bordes */
+    border-radius: 15px; /* Opcional: añade bordes redondeados */
+ 
 }
