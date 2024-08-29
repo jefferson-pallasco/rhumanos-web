@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<section>
 <h1>Eliminar Departamentos</h1>
  
  	<form action="del" method="get">
@@ -21,6 +22,7 @@
  
  		<button onclick="window.location.href ='/rhumanos-web/departamentos/findAll';return false;">
  					Cancelar y Regresar
- 					</button>
+ 					</button></section>
+
 </body>
 </html>
